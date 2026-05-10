@@ -30,6 +30,8 @@ suits
 colnames(suits)
 ```
 
+AI was used to perform the following summary
+
 # Summary Statistics
 
 ```{r}
@@ -49,8 +51,8 @@ The average viewership across all seasons was approximately `r round(summary_sta
 
 ```{r}
 ggplot(suits, aes(x = Season, y = Average_Viewers_Millions)) +
-  geom_line(linewidth = 1.2) +
-  geom_point(size = 3) +
+  geom_line(linewidth = 1.2, color = "steelblue") +
+  geom_point(size = 3, color = "darkblue") +
   labs(
     title = "Suits Average Viewership by Season",
     x = "Season",
@@ -66,7 +68,7 @@ suits_changes <- suits %>%
   mutate(Change = Average_Viewers_Millions - lag(Average_Viewers_Millions))
 
 ggplot(suits_changes, aes(x = Season, y = Change)) +
-  geom_col() +
+  geom_col(fill = "steelblue") +
   labs(
     title = "Season-to-Season Change in Viewership",
     x = "Season",

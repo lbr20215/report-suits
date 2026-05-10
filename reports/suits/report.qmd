@@ -13,7 +13,7 @@ execute:
 
 *Suits* is an American legal drama television series created by Aaron Korsh. The show premiered on USA Network in 2011 and follows talented college dropout Mike Ross as he works with lawyer Harvey Specter despite never attending law school.
 
-![](images/suits_logo.jpg)
+![](images/suits-logo.jpg)
 
 # Load Libraries and Data
 
@@ -23,6 +23,10 @@ library(tidyverse)
 suits <- read_csv("data/suits_viewership.csv")
 
 suits
+```
+
+```{r}
+colnames(suits)
 ```
 
 # Summary Statistics

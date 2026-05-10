@@ -1,12 +1,13 @@
 ---
 title: "Suits Viewership Report"
-author: "Łukasz"
 format:
   html:
     toc: true
     theme: cosmo
 execute:
   echo: false
+  warning: false
+  message: false
 ---
 
 # Introduction
